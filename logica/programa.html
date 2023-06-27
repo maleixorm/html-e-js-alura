@@ -7,10 +7,27 @@
 </head>
 <body>
     <script>
-        alert("A idade de Marcos é: " + (2023-1988));
-        document.write("A idade do Flávio é 18.<br>");
-        document.write("Marcos nasceu em ")
-        document.write(2023-35);
+        
+        const ano = 2023;
+
+        document.write("A idade de Marcos é: " + (ano - 1988) + " anos.");
+        pulaLinha();
+        document.write("A idade do Flávio é: " + (ano - 1977) + " anos.");
+        pulaLinha();
+        mostra("Marcos nasceu em " + (ano - 35));
+        mostra("A idade do Barney é: " + (ano - 1994) + " anos.");
+        mostra("Olá mundo!");
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
     </script>
 </body>
 </html>
