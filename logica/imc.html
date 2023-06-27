@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+</head>
+<body>
+    <script>
+        
+        let peso = 143;
+        let altura = 1.67;
+
+        let imc = peso / (altura * altura);
+
+        mostra("O IMC é: " + imc);
+
+        calculaImc(62, 1.58);
+
+
+        // Funções
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function calculaImc(peso, altura) {
+            let imc = peso / (altura * altura);
+            mostra("O IMC calculado é: " + imc);
+            pulaLinha();
+        }
+    </script>
+</body>
+</html>
