@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC - Retorno - Interação</title>
+</head>
+<body>
+    <script>
+        // Funções
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function calculaImc(altura, peso) {
+            return peso / (altura * altura);
+        }
+
+        let alturaInformada = prompt("Informe sua altura!");
+        let pesoInformado = prompt("Informe seu peso!");
+        let imc = calculaImc(alturaInformada, pesoInformado);
+        mostra("O seu IMC é: " + imc );
+    </script>
+</body>
+</html>
