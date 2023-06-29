@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC - Retorno - Interação</title>
+</head>
+<body>
+    <script>
+        // Funções
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        var vitorias = Number(prompt("Entre com o número de vitórias."));
+        var empates = Number(prompt("Entre com o número de empates."));
+
+        var pontos = vitorias * 3 + empates;
+
+        mostra("Os pontos do seu time são: " + pontos);
+
+        if (pontos > 28) {
+            mostra("O seu time está melhor que no ano passado.");
+        } else if (pontos < 28) {
+            mostra("O seu time está pior que no ano passado.")
+        } else {
+            mostra("O seu time está igual ao ano passado.");
+        }
+
+    </script>
+</body>
+</html>

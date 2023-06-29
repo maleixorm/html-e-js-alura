@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+</head>
+<body>
+    <script>
+        // Funções
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        var numeroPensado = Math.round(Math.random() * 10);
+        var chute = Number(prompt("Digite o seu palpite: "));
+
+        if (chute == numeroPensado) {
+            mostra("Você acertou!");
+        } else {
+            mostra("Você errou! O numero correto era: " + numeroPensado);
+        }
+    </script>
+</body>
+</html>
