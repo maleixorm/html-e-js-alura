@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de anos das Copas do Mundo</title>
+</head>
+<body>
+    <script>
+        // Funções
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        var limite = Number(prompt("Entre com a data limite!"));
+        var anoCopa = 1930;
+        var count = 0;
+
+        while (anoCopa <= limite) {
+            if (anoCopa == 1942 || anoCopa == 1946) {
+                anoCopa += 4;
+            } else {
+                mostra("Teve copa em " + anoCopa);
+                anoCopa += 4;
+                count += 1;
+            }
+        }
+        mostra("Total de Copas do Mundo disputadas: " + count);
+        mostra("FIM");
+
+    </script>
+</body>
+</html>
